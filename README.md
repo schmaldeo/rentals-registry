@@ -2,8 +2,8 @@
 Rentals registry made with plain PHP and HTML and based on MySQL database.
 
 # Requirements
-Webserver (e.g. Apache)
-MySQL/MariaDB
+Webserver (e.g. Apache), 
+MySQL/MariaDB, 
 PHP
 
 # Installation
