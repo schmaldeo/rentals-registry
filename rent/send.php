@@ -34,8 +34,4 @@ if (isset($_POST['item']) && isset($_POST['borrower']) && isset($_POST['date']) 
 }else {
 	header("Location: index.html");
 }
-echo "<br> <a href='/'>Back</a>";
 ?>
-<style>
-	<?php include '../style.css'; ?>
-</style>
