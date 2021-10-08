@@ -38,7 +38,7 @@ if(isset($_POST['update']))
         <input type="date" id="returndate" name="returndate" required><br><br>
         <label for="receiver">Receiver</label><br>
         <input type="text" id="receiver" name="receiver" required><br><br>
-        <button type="submit" name="update">Zwróć</button>
+        <button type="submit" name="update">Return</button>
     </div>
     <div id="anchors">
 		<div class="awyp">
