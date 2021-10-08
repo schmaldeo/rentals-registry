@@ -51,7 +51,7 @@ mysqli_close($conn);
 </style>
 <div id="anchors">
 	<div class="a">
-		<a href="/">Powrót</a>
+		<a href="/">Back</a>
 	</div>
 </div>
 
