@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rentals</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <form method="post" action="send.php">
+            <div class="input">
+                <label for="item">Rented item:</label><br>
+                <input type="text" id="item" name="item" required>
+            </div>
+            <div class="input">
+                <label for="borr">Borrower:</label><br>
+                <input type="text" id="borr" name="borrower" required>
+            </div>
+            <div class="input">
+                <label for="date">Date of loan:</label><br>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="input">
+                <label for="type">Type:</label><br>
+                <select id="type" name="type">
+                    <option value="book">Book</option>
+                    <option value="program">Program</option>
+                    <option value="device">Device</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input">
+                <button type="submit">Add</button>
+                <div id="anchors">
+                    <div class="awyp">
+                        <a href="/">Back</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
