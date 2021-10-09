@@ -24,7 +24,7 @@ if (isset($_POST['item']) && isset($_POST['borrower']) && isset($_POST['date']) 
 
 		if ($res) {
 			mysqli_close($conn); 
-        	header("location:index.html"); 
+        	header("Location:index.html"); 
         	exit;
 		}else {
 			echo "Cannot send the information";

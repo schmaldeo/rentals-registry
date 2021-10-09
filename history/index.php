@@ -35,10 +35,10 @@ if($row['type']){
 };
 echo "<td>" . $row['borrower'] . "</td>";
 echo "<td>" . $row['date'] . "</td>";
-if ($row['returned'] == 0) {
-	echo "<td>No</td>";
-} else {
+if ($row['returned'] == 1) {
 	echo "<td>Yes</td>";
+} else {
+	echo "<td>No</td>";
 }
 echo "<td>" . $row['returndate'] . "</td>";
 echo "<td>" . $row['receiver'] . "</td>";
@@ -52,7 +52,7 @@ mysqli_close($conn);
 	<?php include '../style.css'; ?>
 </style>
 <div class="a">
-	<a href="/">Back</a>
+	<a href="/menu.html">Back</a>
 </div>
 
 

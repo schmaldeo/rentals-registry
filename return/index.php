@@ -3,7 +3,7 @@ include('../db_conn.php');
 
 $result = mysqli_query($conn,"SELECT * FROM info");
 
-echo "<h3>Choose an item to return</h3>";
+echo "<h3 id='returnheading'>Choose an item to return</h3>";
 echo "<table border='1'>
 <tr>
 <th>No.</th>
@@ -50,5 +50,5 @@ mysqli_close($conn);
 	<?php include '../style.css'; ?>
 </style>
 <div class="a">
-	<a href="/">Back</a>
+	<a href="/menu.html">Back</a>
 </div>

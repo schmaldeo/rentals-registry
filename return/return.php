@@ -10,11 +10,11 @@ if(isset($_POST['update'])) {
     $returndate = $_POST['returndate'];
     $receiver = $_POST['receiver'];
 	
-    $edit = mysqli_query($conn,"update info set returndate='$returndate', receiver='$receiver', returned=1 where id='$id'");
+    $edit = mysqli_query($conn,"UPDATE info SET returndate='$returndate', receiver='$receiver', returned=1 WHERE id='$id'");
 	
     if($edit) {
         mysqli_close($conn); 
-        header("location:index.php"); 
+        header("location: ./index.php"); 
         exit;
     } else {
         echo mysqli_error();
@@ -38,7 +38,7 @@ if(isset($_POST['update'])) {
     </div>
     <div id="anchors">
 		<div class="awyp">
-			<a href="/">Back</a>
+			<a href="/return/index.php">Back</a>
 		</div>
 	</div>
     </form>

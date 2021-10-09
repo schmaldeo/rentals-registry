@@ -1,13 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 html, body {
-    height: 99%;
+    height: 100%;
     width: 100%;
     margin: 0;
     background: rgb(106, 0, 117);
-    background: linear-gradient(90deg, rgba(106,0,117,1) 0%, rgba(79, 2, 136, 1) 50%, rgba(0, 102, 208, 1) 100%);
+    background: linear-gradient(60deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
     color: white;
     font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #main {
@@ -41,6 +58,7 @@ button {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size:larger;
+    cursor: pointer;
 }
 
 #btn {
@@ -95,7 +113,7 @@ a:hover {
 
 h3 {
     text-align: center;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .input {
@@ -106,4 +124,13 @@ h3 {
 
 input {
     width: 350px;
+}
+
+.centeralign {
+    text-align: center;
+}
+
+p {
+    padding-top: 50px;
+    text-align: center;
 }
