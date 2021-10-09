@@ -50,5 +50,5 @@ mysqli_close($conn);
 	<?php include '../style.css'; ?>
 </style>
 <div class="a">
-	<a href="/menu.html">Back</a>
+	<a href="../menu.html">Back</a>
 </div>

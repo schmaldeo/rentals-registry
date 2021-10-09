@@ -38,7 +38,7 @@ if(isset($_POST['update'])) {
     </div>
     <div id="anchors">
 		<div class="awyp">
-			<a href="/return/index.php">Back</a>
+			<a href="./index.php">Back</a>
 		</div>
 	</div>
     </form>
