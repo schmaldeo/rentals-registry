@@ -20,7 +20,6 @@ Just simply open the installer file and enter path to the place where you want t
 # To be added
 History access control <br>
 Dynamic/static background switch <br>
-.exe installer (not in the near future probably)
 
 # Screenshots
 
