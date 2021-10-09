@@ -15,8 +15,8 @@ I'm planning to add a history access control and an admin panel related to it as
 
 # Screenshots
 
-![alt text](https://i.imgur.com/cstJzAx.png)
-![alt text](https://i.imgur.com/GWuLHeL.png)
-![alt text](https://i.imgur.com/pJv14yL.png)
-![alt text](https://i.imgur.com/O6JgTr2.png)
-![alt text](https://i.imgur.com/biqqzT6.png)
+![alt text](https://i.imgur.com/y9781Tn.png)
+![alt text](https://i.imgur.com/TyHR6yN.png)
+![alt text](https://i.imgur.com/fJGgCK6.png)
+![alt text](https://i.imgur.com/kmvZ0bW.png)
+![alt text](https://i.imgur.com/wkCDbp7.png)
