@@ -16,6 +16,7 @@ Drop the files from `src` folder to your main XAMPP/Apache folder and enter the 
 # To be added
 History access control <br>
 Dynamic/static background switch <br>
+.exe installer (not in the near future probably)
 
 # Screenshots
 
