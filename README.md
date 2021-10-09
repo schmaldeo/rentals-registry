@@ -16,4 +16,4 @@ You can change database details in `db_conn.php` file located in the main folder
 ![alt text](https://i.imgur.com/GWuLHeL.png)
 ![alt text](https://i.imgur.com/pJv14yL.png)
 ![alt text](https://i.imgur.com/O6JgTr2.png)
-![alt text](https://i.imgur.com/e3paEKK.png)
+![alt text](https://i.imgur.com/biqqzT6.png)
