@@ -2,20 +2,20 @@
 Rentals registry made with plain PHP and HTML and based on MySQL database.
 
 # Features
-You can add an item that you rented to the database, then return it. Return site only displays items that are yet to be returned. You can have an overwiew of all the records in the history tab, where you can also export it to .csv file.
+You can add an item that you rented to the database, then return it. Return site only displays items that are yet to be returned. You can have an overwiew of all the records in the history tab, where you can also export it to .csv file. <br>
 Setup is very simple thanks to built-in wizard that automatically detects if the registry was set up already based on presence of `db_conn.php` file. You can set your database connection up there.
 
 # Requirements
-Webserver (e.g. Apache), 
-MySQL/MariaDB, 
+Webserver (e.g. Apache) <br>
+MySQL/MariaDB <br>
 PHP
 
 # Installation
 Drop the files into your main XAMPP/Apache folder and enter the main page.
 
 # To be added
-History access control \n
-Dynamic/static background switch \n
+History access control <br>
+Dynamic/static background switch <br>
 
 # Screenshots
 
