@@ -13,7 +13,7 @@ PHP
 # Installation
 Manual: <br>`git clone https://github.com/schmatteo/rentals-registry.git` <br>
 Using pre-compiled package on windows: <br>
-Just simply open the installer file and enter your Apache path.
+Just simply open the installer file and enter path to the place where you want the files to be stored (probably Apache root directory)
 
 # To be added
 History access control <br>
