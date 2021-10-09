@@ -1,17 +1,21 @@
 # rentals-registry
 Rentals registry made with plain PHP and HTML and based on MySQL database.
 
+# Features
+You can add an item that you rented to the database, then return it. Return site only displays items that are yet to be returned. You can have an overwiew of all the records in the history tab, where you can also export it to .csv file.
+Setup is very simple thanks to built-in wizard that automatically detects if the registry was set up already based on presence of `db_conn.php` file. You can set your database connection up there.
+
 # Requirements
 Webserver (e.g. Apache), 
 MySQL/MariaDB, 
 PHP
 
 # Installation
-Drop the files into your main XAMPP/Apache folder. Default database details for this program are `root` with no password, database called `registry` and table called `info` described in `table.sql` file. <br>
-You can change database details in `db_conn.php` file located in the main folder.
+Drop the files into your main XAMPP/Apache folder and enter the main page.
 
 # To be added
-I'm planning to add a history access control and an admin panel related to it as for personal data security.
+History access control \n
+Dynamic/static background switch \n
 
 # Screenshots
 
