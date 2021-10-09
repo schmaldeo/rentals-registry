@@ -11,7 +11,7 @@ MySQL/MariaDB <br>
 PHP
 
 # Installation
-Drop the files into your main XAMPP/Apache folder and enter the main page.
+Drop the files from `src` folder to your main XAMPP/Apache folder and enter the main page.
 
 # To be added
 History access control <br>
