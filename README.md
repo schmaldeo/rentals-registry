@@ -9,3 +9,11 @@ PHP
 # Installation
 Drop the files into your main XAMPP/Apache folder. Default database details for this program are `root` with no password, database called `registry` and table called `info` described in `table.sql` file. <br>
 You can change database details in `db_conn.php` file located in the main folder.
+
+# Screenshots
+
+![alt text](https://i.imgur.com/cstJzAx.png)
+![alt text](https://i.imgur.com/GWuLHeL.png)
+![alt text](https://i.imgur.com/pJv14yL.png)
+![alt text](https://i.imgur.com/O6JgTr2.png)
+![alt text](https://i.imgur.com/e3paEKK.png)
