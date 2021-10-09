@@ -9,6 +9,9 @@
 
 <body>
     <div id="main">
+        <h3>
+            Fill up the form accordingly to the labels
+        </h3>
         <form method="post" action="send.php">
             <div class="input">
                 <label for="item">Rented item:</label><br>
@@ -23,7 +26,7 @@
                 <input type="date" id="date" name="date" required>
             </div>
             <div class="input">
-                <label for="type">Type:</label><br>
+                <label for="type">Item type:</label><br>
                 <select id="type" name="type">
                     <option value="book">Book</option>
                     <option value="program">Program</option>
@@ -33,10 +36,8 @@
             </div>
             <div class="input">
                 <button type="submit">Add</button>
-                <div id="anchors">
-                    <div class="awyp">
-                        <a href="/">Back</a>
-                    </div>
+                <div class="awyp">
+                    <a href="/">Back</a>
                 </div>
             </div>
         </form>

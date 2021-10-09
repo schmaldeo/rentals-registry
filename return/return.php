@@ -2,25 +2,21 @@
 include('../db_conn.php');
 
 $id = $_GET['id']; 
-$qry = mysqli_query($conn,"SELECT * FROM info WHERE id='$id'"); 
+$res = mysqli_query($conn,"SELECT * FROM info WHERE id='$id'"); 
 
-$data = mysqli_fetch_array($qry); 
+$data = mysqli_fetch_array($res); 
 
-if(isset($_POST['update'])) 
-{
+if(isset($_POST['update'])) {
     $returndate = $_POST['returndate'];
     $receiver = $_POST['receiver'];
 	
     $edit = mysqli_query($conn,"update info set returndate='$returndate', receiver='$receiver', returned=1 where id='$id'");
 	
-    if($edit)
-    {
+    if($edit) {
         mysqli_close($conn); 
         header("location:index.php"); 
         exit;
-    }
-    else
-    {
+    } else {
         echo mysqli_error();
     }    	
 }

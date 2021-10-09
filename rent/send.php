@@ -16,7 +16,7 @@ if (isset($_POST['item']) && isset($_POST['borrower']) && isset($_POST['date']) 
 	$type = validate($_POST['type']);
 
 	if (empty($item) || empty($borrower) || empty($date) || empty($type)) {
-		header("Location: index.html");
+		echo "One or more fields were empty";
 	}else {
 
 		$sql = "INSERT INTO info(item, borrower, date, type) VALUES('$item', '$borrower', '$date', '$type')";
@@ -27,11 +27,11 @@ if (isset($_POST['item']) && isset($_POST['borrower']) && isset($_POST['date']) 
         	header("location:index.html"); 
         	exit;
 		}else {
-			echo "Cannot send";
+			echo "Cannot send the information";
 		}
 	}
 
 }else {
-	header("Location: index.html");
+	echo("There has been an error");
 }
 ?>

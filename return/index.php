@@ -3,10 +3,12 @@ include('../db_conn.php');
 
 $result = mysqli_query($conn,"SELECT * FROM info");
 
+echo "<h3>Choose an item to return</h3>";
 echo "<table border='1'>
 <tr>
-<th>ID</th>
+<th>No.</th>
 <th>Rented item</th>
+<th>Item type</th>
 <th>Borrower</th>
 <th>Date of loan</th>
 <th>Return</th>
@@ -21,6 +23,15 @@ while($row = mysqli_fetch_array($result))
         echo "<tr>";
         echo "<td>" . $row['id'] . "</td>";
         echo "<td>" . $row['item'] . "</td>";
+        if ($row['type'] == 'book') {
+            echo "<td>Book</td>";
+        } else if ($row['type'] == 'program') {
+            echo "<td>Program</td>";
+        } else if ($row['type'] == 'device') {
+            echo "<td>Device</td>";
+        } else {
+            echo "<td>Other</td>";
+        }
         echo "<td>" . $row['borrower'] . "</td>";
         echo "<td>" . $row['date'] . "</td>";
         echo "<td> <a href='return.php?id=". $row['id'] . "'>Return</a> </td>";
@@ -38,8 +49,6 @@ mysqli_close($conn);
 <style>
 	<?php include '../style.css'; ?>
 </style>
-<div id="anchors">
-	<div class="a">
-		<a href="/">Back</a>
-	</div>
+<div class="a">
+	<a href="/">Back</a>
 </div>
