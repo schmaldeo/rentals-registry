@@ -11,7 +11,9 @@ MySQL/MariaDB <br>
 PHP
 
 # Installation
-Drop the files from `src` folder to your main XAMPP/Apache folder and enter the main page.
+Manual: <br>`git clone https://github.com/schmatteo/rentals-registry.git` <br>
+Using pre-compiled package on windows: <br>
+Just simply open the installer file and enter your Apache path.
 
 # To be added
 History access control <br>
