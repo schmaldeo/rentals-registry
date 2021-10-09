@@ -2,12 +2,6 @@
 if(isset($_POST['export'])) {
 include('../db_conn.php');
 
-$conn = mysqli_connect($sname, $uname, $password, $db_name);
-if (!$conn) {
-	echo "Connection failed!";
-	exit();
-}
-
 header('Content-Type: text/csv; charset=utf-8');
 header('Content-Disposition: attachment; filename=info.csv');
 $output = fopen('php://output', 'w');
