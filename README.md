@@ -18,7 +18,7 @@ Using pre-compiled package on windows: <br>
 Just simply open the installer file and enter path to the place where you want the files to be stored (probably Apache root directory)
 
 # To be added
-History access control <br>
+Access control <br>
 Dynamic/static background switch <br>
 
 # Screenshots
