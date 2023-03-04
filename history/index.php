@@ -1,7 +1,8 @@
 <?php
-include('../db_conn.php');
+include_once "../db_conn.php";
 
-$result = mysqli_query($conn,"SELECT * FROM info");
+$mysqli = new mysqli(HOSTNAME, USERNAME, PASSWORD, "rentalsregistry");
+$result = $mysqli->query("SELECT * FROM rentals");
 
 echo "<h3>History</h3>";
 
@@ -46,7 +47,7 @@ echo "</tr>";
 }
 echo "</table>";
 
-mysqli_close($conn);
+$mysqli->close();
 ?>
 <style>
 	<?php include '../style.css'; ?>
