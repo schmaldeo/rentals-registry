@@ -15,6 +15,8 @@ if (isset($_POST['hostname']) && isset($_POST['username'])) {
     } else {
         $file = fopen('db_details.json', 'w') or die ('Cannot open the file');
         class ArrayValue implements JsonSerializable {
+          private array $array;
+
           public function __construct(array $array) {
             $this->array = $array;
           }
@@ -29,6 +31,6 @@ if (isset($_POST['hostname']) && isset($_POST['username'])) {
         $txt = json_encode(new ArrayValue($array));
         fwrite($file, $txt);
         fclose($file);
-//        header('Location: ./dbsetup.php?hname='.$hostname.'&uname='.$username.'&pw='.$password);
+        header('Location: ./dbsetup.php?hname='.$hostname.'&uname='.$username.'&pw='.$password);
     }
 }
