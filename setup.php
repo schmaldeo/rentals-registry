@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['hostname']) && isset($_POST['username'])) {
-    function validate($data) {
+    function validate($data): string
+    {
         $data = trim($data);
         $data = stripslashes($data);
         return htmlspecialchars($data);

@@ -3,7 +3,8 @@ include_once "../db_conn.php";
 
 if (isset($_POST['item']) && isset($_POST['borrower']) && isset($_POST['date']) && isset($_POST['type'])) {
 
-	function validate($data){
+	function validate($data): string
+    {
        $data = trim($data);
 	   $data = stripslashes($data);
 	   return htmlspecialchars($data);
