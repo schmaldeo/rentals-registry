@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Rentals</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../style.css" />
+  <title>Rentals</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="../style.css"/>
 </head>
 
 <body>
-    <div id="main">
-        <h3>
-            Fill up the form accordingly to the labels
-        </h3>
-        <form method="post" action="send.php">
-            <div class="input">
-                <label for="item">Rented item:</label><br>
-                <input type="text" id="item" name="item" required>
-            </div>
-            <div class="input">
-                <label for="borr">Borrower:</label><br>
-                <input type="text" id="borr" name="borrower" required>
-            </div>
-            <div class="input">
-                <label for="date">Date of loan:</label><br>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="input">
-                <label for="type">Item type:</label><br>
-                <select id="type" name="type">
-                    <option value="book">Book</option>
-                    <option value="program">Program</option>
-                    <option value="device">Device</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div class="input">
-                <button type="submit">Add</button>
-                <div class="awyp">
-                    <a href="../menu.html">Back</a>
-                </div>
-            </div>
-        </form>
+<div id="main">
+  <h3>
+    Fill up the form accordingly to the labels
+  </h3>
+  <form method="post" action="send.php">
+    <div class="input">
+      <label for="item">Rented item:</label><br>
+      <input type="text" id="item" name="item" required>
     </div>
+    <div class="input">
+      <label for="borr">Borrower:</label><br>
+      <input type="text" id="borr" name="borrower" required>
+    </div>
+    <div class="input">
+      <label for="date">Date of loan:</label><br>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="input">
+      <label for="type">Item type:</label><br>
+      <select id="type" name="type">
+        <option value="book">Book</option>
+        <option value="program">Program</option>
+        <option value="device">Device</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="input">
+      <button type="submit">Add</button>
+      <div class="awyp">
+        <a href="../menu.html">Back</a>
+      </div>
+    </div>
+  </form>
+</div>
 </body>
 
 </html>

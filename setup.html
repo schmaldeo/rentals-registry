@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Setup</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./style.css" />
+  <title>Setup</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 
 <body>
-    <form method="post" action="setup.php">
-        <div class="input">
-            <label for="host">Hostname:</label><br>
-            <input type="text" id="host" name="hostname" required>
-        </div>
-        <div class="input">
-            <label for="uname">Database username:</label><br>
-            <input type="text" id="uname" name="username" required>
-        </div>
-        <div class="input">
-            <label for="pass">Database password:</label><br>
-            <input type="text" id="pass" name="pass">
-        </div>
-        <div class="input">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
-    <p>
-        If you have already been through this setup and you still don't have a db_conn.php file in your main registry
-        folder or if it's empty you should add write permissions to setup.php and dbsetup.php (chmod +rwx setup.php;
-        chmod +rwx dbsetup.php).
-    </p>
+<form method="post" action="setup.php">
+  <div class="input">
+    <label for="host">Hostname:</label><br>
+    <input type="text" id="host" name="hostname" required>
+  </div>
+  <div class="input">
+    <label for="uname">Database username:</label><br>
+    <input type="text" id="uname" name="username" required>
+  </div>
+  <div class="input">
+    <label for="pass">Database password:</label><br>
+    <input type="text" id="pass" name="pass">
+  </div>
+  <div class="input">
+    <button type="submit">Submit</button>
+  </div>
+</form>
 </body>
 
 </html>
