@@ -1,10 +1,12 @@
 <?php
-include('../db_conn.php');
+include_once "../db_conn.php";
 
-$result = mysqli_query($conn,"SELECT * FROM info");
+$mysqli = new mysqli(HOSTNAME, USERNAME, PASSWORD, "rentalsregistry");
+
+$result = $mysqli->query("SELECT * FROM rentals");
 
 echo "<h3 id='returnheading'>Choose an item to return</h3>";
-echo "<table border='1'>
+echo "<table>
 <tr>
 <th>No.</th>
 <th>Rented item</th>
@@ -39,12 +41,7 @@ while($row = mysqli_fetch_array($result))
 }}
 echo "</table>";
 
-if (!$result) {
-    printf(mysqli_error($conn));
-    exit();
-}
-
-mysqli_close($conn);
+$mysqli->close();
 ?>
 <style>
 	<?php include '../style.css'; ?>
