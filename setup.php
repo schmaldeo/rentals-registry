@@ -13,24 +13,15 @@ if (isset($_POST['hostname']) && isset($_POST['username'])) {
     if (empty($hostname) || empty($username)) {
         die("One or more required fields were empty"); 
     } else {
-        $file = fopen('db_details.json', 'w') or die ('Cannot open the file');
-        class ArrayValue implements JsonSerializable {
-          private array $array;
-
-          public function __construct(array $array) {
-            $this->array = $array;
-          }
-  
-          public function jsonSerialize() {
-            return $this->array;
-          }
-        }
-
-        $array = ['hostname' => $hostname, 'username' => $username, 'password' => $password];
+        $file = fopen('db_conn.php', 'w') or die ('Cannot open the file');
+        $txt = "<?php
+          const HOSTNAME = \"$hostname\";
+          const USERNAME = \"$username\";
+          const PASSWORD = \"$password\";
+        ";
         
-        $txt = json_encode(new ArrayValue($array));
         fwrite($file, $txt);
         fclose($file);
-        header('Location: ./dbsetup.php?hname='.$hostname.'&uname='.$username.'&pw='.$password);
+        header('Location: ./dbsetup.php');
     }
 }

@@ -1,9 +1,7 @@
 <?php
-$hostname = $_GET['hname'];
-$username = $_GET['uname'];
-$password = $_GET['pw'];
+include_once "./db_conn.php";
 
-$mysqli = new mysqli($hostname, $username, $password);
+$mysqli = new mysqli(HOSTNAME, USERNAME, PASSWORD);
 
 $mysqli->query('CREATE DATABASE rentalsregistry');
 
