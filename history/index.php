@@ -33,7 +33,7 @@ if($row['type']){
 	} else {
 		echo "<td>Other</td>";
 	}
-};
+}
 echo "<td>" . $row['borrower'] . "</td>";
 echo "<td>" . $row['date'] . "</td>";
 if ($row['returned'] == 1) {
