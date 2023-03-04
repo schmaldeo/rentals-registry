@@ -30,7 +30,7 @@ if(isset($_POST['update'])) {
 
     <form method="POST">
     <div class="input">
-        <label for="return">Date of return</label><br>
+        <label for="returndate">Date of return</label><br>
         <input type="date" id="returndate" name="returndate" required><br><br>
         <label for="receiver">Receiver</label><br>
         <input type="text" id="receiver" name="receiver" required><br><br>
