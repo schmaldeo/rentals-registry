@@ -1,8 +1,11 @@
 <?php
-include('../db_conn.php');
+include_once "../db_conn.php";
 
-$id = $_GET['id']; 
-$res = mysqli_query($conn,"SELECT * FROM info WHERE id='$id'"); 
+$id = $_GET['id'];
+
+$mysqli = new mysqli(HOSTNAME, USERNAME, PASSWORD, "rentalsregistry");
+
+$res = $mysqli->query("SELECT * FROM rentals WHERE id=$id");
 
 $data = mysqli_fetch_array($res); 
 
@@ -10,15 +13,10 @@ if(isset($_POST['update'])) {
     $returndate = $_POST['returndate'];
     $receiver = $_POST['receiver'];
 	
-    $edit = mysqli_query($conn,"UPDATE info SET returndate='$returndate', receiver='$receiver', returned=1 WHERE id='$id'");
+    $mysqli->query("UPDATE rentals SET returndate='$returndate', receiver='$receiver', returned=1 WHERE id=$id");
 	
-    if($edit) {
-        mysqli_close($conn); 
-        header("location: ./index.php"); 
-        exit;
-    } else {
-        echo mysqli_error();
-    }    	
+    $mysqli->close();
+    header("Location: ./index.php");
 }
 ?>
 <style>
